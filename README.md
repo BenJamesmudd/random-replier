@@ -9,8 +9,9 @@ Then, by the same pseudo random numbers and if the account has a verifed email, 
 
 To run this program, follow these instructions:
 
-- Install Praw(latest version)
-- Python3.x (Python2.x will not work.)
+
+- Install Python3.x (Python2.x will not work.)
+- Install Praw(latest version) (after you have installed python, this can be done by running requirements.py
 - Create an app in the Reddit settings. To do that, follow these steps:
     - Go to https://www.reddit.com/prefs/apps
     - scroll down until you see "Create another app"
