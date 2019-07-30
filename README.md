@@ -17,8 +17,8 @@ To run this program, follow these instructions:
     - scroll down until you see "Create another app"
     - name it whatever you would like.
     - You will see 3 selection options. "Web app," "Installed app," and "Script." For this, you will choose "Script."
-    - description is optional. Just type jibberish text in this box if you so desire.
-    - About URL: just enter "www.example.com." This field isn't absolutely necessary
+    - description is optional. Just type jibberish text in this box. 
+    - About URL: just enter "www.example.com."
     - Redirect URL: Same as About URL.
     - Click "Create app"
     - Keep this tab open for the next step
