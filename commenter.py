@@ -15,8 +15,10 @@ def commenter():
     while True:
         for submission in subreddit.new(limit=2):
             if re.search("", submission.title, re.IGNORECASE):
+                print(submission.title)
+                upvote = input("Would you like to upvote this post?")
                 decider = rando.choice(numbers)
-                if decider > 500:
+                if decider > 500 and upvote == "y":
                     submission.upvote()
                     upvote = True
                 print("Bot interacting with:", submission.title,"\n")
