@@ -16,13 +16,13 @@ def commenter():
         for submission in subreddit.new(limit=2):
             if re.search("", submission.title, re.IGNORECASE):
                 print(submission.title,"\n")
-                upvote = input("Would you like to upvote this post?[y/n]")
+                chooser = input("Would you like to upvote this post?[y/n]")
                 decider = rando.choice(numbers)
-                if decider > 500 and upvote.lower() == "y":
+                if decider > 500 and chooser.lower() == "y":
                     submission.upvote()
                     upvote = True
-                elif upvote.lower() == "n":
-                    print("Didn't upvote")
+                elif chooser.lower() or decider < 500 == "n":
+                    upvote = False
                 print("Bot interacting with:", submission.title,"\n")
                 print("Submission ID: ",submission.id,"\n")
                 print("The author is:",submission.author,"\n")
@@ -30,6 +30,8 @@ def commenter():
                 print("The decider is:",decider,"\n")
                 if upvote == True:
                     print("I upvoted\n")
+                elif upvote == False:
+                    print("Didn't upvote\n")
                 author = str(submission.author)
                 if reddit.redditor(author).has_verified_email == True and decider > 500 and upvote == True:
                     if submission.id not in posts_replied_to:
