@@ -21,6 +21,8 @@ def commenter():
                 if decider > 500 and upvote == "y":
                     submission.upvote()
                     upvote = True
+                elif upvote == "n":
+                    print("Didn't upvote")
                 print("Bot interacting with:", submission.title,"\n")
                 print("Submission ID: ",submission.id,"\n")
                 print("The author is:",submission.author,"\n")
