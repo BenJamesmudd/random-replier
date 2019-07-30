@@ -14,7 +14,8 @@ To run this program, follow these instructions:
 - Install Praw(latest version) (after you have installed python, this can be done by running requirements.py
 - Create an app in the Reddit settings. To do that, follow these steps:
     - Go to https://www.reddit.com/prefs/apps
-    - scroll down until you see "Create another app"
+    - scroll down until you see "Create another app" or if you don't already have 
+      any apps, click "create an app"
     - name it whatever you would like.
     - You will see 3 selection options. "Web app," "Installed app," and "Script." For this, you will choose "Script."
     - description is optional. Just type jibberish text in this box. 
